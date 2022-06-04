@@ -138,6 +138,26 @@ function showCollection (array ) {
 }
 console.log('test', showCollection(collection));
 
+function findByArtist ( artist ) {
+    let blankArray=[];
+    for ( x of collection ) {
+        console.log(x.artist);
+        if ( )
+        // if ( x.artist === artist ) {
+        //     blankArray.push(x);
+        //     console.log( 'found artist ', x.artist);
+        // // return true
+        // } 
+        // else {
+        //     console.log( 'nope ');
+        //     return false
+        // }
+    }
+
+    
+}
+console.log( findByArtist('blink 182'));
+
 // console.log( collection.forEach(x => console.log('Title: ', x.title, 'Artist: ', x.artist, 'Year Published: ', x.yearPublished) ));
 
 
