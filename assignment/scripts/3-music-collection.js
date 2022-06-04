@@ -113,9 +113,9 @@ addToCollection( 'Dreamland', 'Glass Animals', '2020' )
 addToCollection( 'Life of Pablo', 'Kanye', '2016' )
 addToCollection( 'Youre a Woman, Im a Machine', 'Death from Above 1979', '2004' )
 addToCollection( 'Walking on a Dream', 'Empire of the Sun', '2008' )
-addToCollection( 'Take off your pants and jacket', 'blink 182 ', '2001' )
-addToCollection( 'Enema of the State', 'blink 182 ', '1999' )
-addToCollection( 'All killer no filler songs', 'sum 41  ', '2001' )
+addToCollection( 'Take off your pants and jacket', 'blink 182', '2001' )
+addToCollection( 'Enema of the State', 'blink 182', '1999' )
+addToCollection( 'All killer no filler songs', 'sum 41', '2001' )
 
 
 
@@ -138,25 +138,28 @@ function showCollection (array ) {
 }
 console.log('test', showCollection(collection));
 
+
+console.log('--------start here-----');
 function findByArtist ( artist ) {
     let blankArray=[];
+    // collection.map(x => console.log( x.artist == artist ));
     for ( x of collection ) {
-        console.log(x.artist);
-        if ( )
-        // if ( x.artist === artist ) {
-        //     blankArray.push(x);
-        //     console.log( 'found artist ', x.artist);
-        // // return true
-        // } 
-        // else {
-        //     console.log( 'nope ');
-        //     return false
-        // }
+        if ( x.artist === artist ) {
+        blankArray.push(x);
+        } 
+        else {
+            console.log( 'nope');
+        }
     }
-
+    return blankArray
     
 }
 console.log( findByArtist('blink 182'));
+console.log( findByArtist('Garth Brooks'));
+console.log( findByArtist('Empire of the Sun'));
+console.log( findByArtist('sum 41'));
+console.log( findByArtist('Kanye'));
+
 
 // console.log( collection.forEach(x => console.log('Title: ', x.title, 'Artist: ', x.artist, 'Year Published: ', x.yearPublished) ));
 
